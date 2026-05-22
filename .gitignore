@@ -1,0 +1,5 @@
+build/
+DerivedData/
+*.xcuserstate
+xcuserdata/
+macos/NetworkBandwidthCheck/Resources/wifi_speed_check.py

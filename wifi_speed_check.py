@@ -13,8 +13,8 @@ def bits_to_mbps(bits_per_second: float) -> float:
     return bits_per_second / 1_000_000
 
 
-def run_speedtest(secure: bool = True) -> dict:
-    print("Running speed test....")
+def run_speedtest(secure: bool = True, log=print) -> dict:
+    log("Running speed test....")
     try:
         import speedtest
     except ImportError as exc:
@@ -23,16 +23,16 @@ def run_speedtest(secure: bool = True) -> dict:
             "  pip install -r requirements.txt"
         ) from exc
 
-    print("Finding best Speedtest server...")
+    log("Finding best Speedtest server...")
     tester = speedtest.Speedtest(secure=secure)
     tester.get_best_server()
     server = tester.results.server
 
-    print(f"Server: {server['sponsor']} ({server['name']}, {server['country']})")
-    print(f"Testing download...")
+    log(f"Server: {server['sponsor']} ({server['name']}, {server['country']})")
+    log("Testing download...")
     download_bps = tester.download()
 
-    print("Testing upload...")
+    log("Testing upload...")
     upload_bps = tester.upload()
 
     return {
@@ -40,7 +40,7 @@ def run_speedtest(secure: bool = True) -> dict:
         "download_mbps": round(bits_to_mbps(download_bps), 2),
         "upload_mbps": round(bits_to_mbps(upload_bps), 2),
         "server": {
-            "id": server["id"],
+            "id": int(server["id"]),
             "name": server["name"],
             "sponsor": server["sponsor"],
             "country": server["country"],
@@ -77,8 +77,10 @@ def parse_args() -> argparse.Namespace:
 def main() -> int:
     args = parse_args()
 
+    log = print if not args.json else lambda *a, **k: print(*a, file=sys.stderr, **k)
+
     try:
-        results = run_speedtest(secure=not args.insecure)
+        results = run_speedtest(secure=not args.insecure, log=log)
     except KeyboardInterrupt:
         print("\nCancelled.", file=sys.stderr)
         return 130
@@ -87,7 +89,7 @@ def main() -> int:
         return 1
 
     if args.json:
-        print(json.dumps(results, indent=2))
+        print(json.dumps(results, separators=(",", ":")))
     else:
         print_results(results)
 

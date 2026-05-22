@@ -1,0 +1,427 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		01d5c5e6700b433ba5179d7f /* SpeedTestResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630c2b075b2c47c28dd7a199 /* SpeedTestResult.swift */; };
+		2464d245576d4cefb9cb3d23 /* SpeedTestResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630c2b075b2c47c28dd7a199 /* SpeedTestResult.swift */; };
+		4695370dae0f456a9e8d7d8c /* NetworkBandwidthCheckWidget.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 798af062ff014c399c7ce34c /* NetworkBandwidthCheckWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		5c10a375c0b948fab5b310e9 /* NetworkBandwidthCheckApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897882fbea0046d990ad76e3 /* NetworkBandwidthCheckApp.swift */; };
+		65aac7da87804cbb8dfb6bb5 /* SpeedTestViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5e157e72bba249aab1a2bb56 /* SpeedTestViewModel.swift */; };
+		74cb6f18700340098d643e9e /* BandwidthWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = d86fdb8af7a84a63ba054012 /* BandwidthWidget.swift */; };
+		92ea1600b80345eaac030990 /* SpeedTestRunner.swift in Sources */ = {isa = PBXBuildFile; fileRef = ca7c10b3eba54f24841a2752 /* SpeedTestRunner.swift */; };
+		a183b0eaef514ff794059b55 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001baf5c58574d8886ecaf92 /* ContentView.swift */; };
+		c220e00686ed4c1da347591d /* wifi_speed_check.py in Resources */ = {isa = PBXBuildFile; fileRef = ccd837886dde4baeb305ffa8 /* wifi_speed_check.py */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7e71523317fe4d16b6449dcd /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 12621ee6a41d444ca8a64d00 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 075ecf499dcd4c39b2447360;
+			remoteInfo = NetworkBandwidthCheckWidget;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		dd67b20734784b219f8babdd /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				4695370dae0f456a9e8d7d8c /* NetworkBandwidthCheckWidget.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		001baf5c58574d8886ecaf92 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		630c2b075b2c47c28dd7a199 /* SpeedTestResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeedTestResult.swift; sourceTree = "<group>"; };
+		5e157e72bba249aab1a2bb56 /* SpeedTestViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeedTestViewModel.swift; sourceTree = "<group>"; };
+		798af062ff014c399c7ce34c /* NetworkBandwidthCheckWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = NetworkBandwidthCheckWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		897882fbea0046d990ad76e3 /* NetworkBandwidthCheckApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkBandwidthCheckApp.swift; sourceTree = "<group>"; };
+		ab077c85ea804638bf7f800c /* NetworkBandwidthCheck.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetworkBandwidthCheck.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ad575f9c2d1645b4b39fc789 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ca7c10b3eba54f24841a2752 /* SpeedTestRunner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeedTestRunner.swift; sourceTree = "<group>"; };
+		cbc5a2f7b9c14fb3b7dc4089 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ccd837886dde4baeb305ffa8 /* wifi_speed_check.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = wifi_speed_check.py; sourceTree = "<group>"; };
+		d86fdb8af7a84a63ba054012 /* BandwidthWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BandwidthWidget.swift; sourceTree = "<group>"; };
+		021e3c16ed8a49b099e25781 /* NetworkBandwidthCheck.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NetworkBandwidthCheck.entitlements; sourceTree = "<group>"; };
+		60d7a03d2dd7495086f04c9e /* NetworkBandwidthCheckWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NetworkBandwidthCheckWidget.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4cfcc382c4c74791a6ba0873 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70444ad4d05242e38db31881 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		12621ee6a41d444ca8a64d01 = {
+			isa = PBXGroup;
+			children = (
+				12621ee6a41d444ca8a64d02 /* NetworkBandwidthCheck */,
+				075ecf499dcd4c39b2447361 /* NetworkBandwidthCheckWidget */,
+				12621ee6a41d444ca8a64d03 /* Shared */,
+				12621ee6a41d444ca8a64d04 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		12621ee6a41d444ca8a64d02 /* NetworkBandwidthCheck */ = {
+			isa = PBXGroup;
+			children = (
+				897882fbea0046d990ad76e3 /* NetworkBandwidthCheckApp.swift */,
+				001baf5c58574d8886ecaf92 /* ContentView.swift */,
+				ca7c10b3eba54f24841a2752 /* SpeedTestRunner.swift */,
+				5e157e72bba249aab1a2bb56 /* SpeedTestViewModel.swift */,
+				12621ee6a41d444ca8a64d05 /* Resources */,
+				ad575f9c2d1645b4b39fc789 /* Info.plist */,
+				021e3c16ed8a49b099e25781 /* NetworkBandwidthCheck.entitlements */,
+			);
+			path = NetworkBandwidthCheck;
+			sourceTree = "<group>";
+		};
+		12621ee6a41d444ca8a64d03 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				630c2b075b2c47c28dd7a199 /* SpeedTestResult.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		12621ee6a41d444ca8a64d04 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ab077c85ea804638bf7f800c /* NetworkBandwidthCheck.app */,
+				798af062ff014c399c7ce34c /* NetworkBandwidthCheckWidget.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		12621ee6a41d444ca8a64d05 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				ccd837886dde4baeb305ffa8 /* wifi_speed_check.py */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		075ecf499dcd4c39b2447361 /* NetworkBandwidthCheckWidget */ = {
+			isa = PBXGroup;
+			children = (
+				d86fdb8af7a84a63ba054012 /* BandwidthWidget.swift */,
+				cbc5a2f7b9c14fb3b7dc4089 /* Info.plist */,
+				60d7a03d2dd7495086f04c9e /* NetworkBandwidthCheckWidget.entitlements */,
+			);
+			path = NetworkBandwidthCheckWidget;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		b43c30f488ed421e974b178e /* NetworkBandwidthCheck */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 12621ee6a41d444ca8a64d10 /* Build configuration list for PBXNativeTarget "NetworkBandwidthCheck" */;
+			buildPhases = (
+				4cfcc382c4c74791a6ba0872 /* Sources */,
+				4cfcc382c4c74791a6ba0873 /* Frameworks */,
+				765b1168ad534d41af5c5e3a /* Resources */,
+				dd67b20734784b219f8babdd /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				12621ee6a41d444ca8a64d11 /* PBXTargetDependency */,
+			);
+			name = NetworkBandwidthCheck;
+			productName = NetworkBandwidthCheck;
+			productReference = ab077c85ea804638bf7f800c /* NetworkBandwidthCheck.app */;
+			productType = "com.apple.product-type.application";
+		};
+		075ecf499dcd4c39b2447360 /* NetworkBandwidthCheckWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 12621ee6a41d444ca8a64d12 /* Build configuration list for PBXNativeTarget "NetworkBandwidthCheckWidget" */;
+			buildPhases = (
+				70444ad4d05242e38db31880 /* Sources */,
+				70444ad4d05242e38db31881 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NetworkBandwidthCheckWidget;
+			productName = NetworkBandwidthCheckWidget;
+			productReference = 798af062ff014c399c7ce34c /* NetworkBandwidthCheckWidget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		12621ee6a41d444ca8a64d00 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					075ecf499dcd4c39b2447360 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					b43c30f488ed421e974b178e = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = 12621ee6a41d444ca8a64d13 /* Build configuration list for PBXProject "NetworkBandwidthCheck" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 12621ee6a41d444ca8a64d01;
+			productRefGroup = 12621ee6a41d444ca8a64d04 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				b43c30f488ed421e974b178e /* NetworkBandwidthCheck */,
+				075ecf499dcd4c39b2447360 /* NetworkBandwidthCheckWidget */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		765b1168ad534d41af5c5e3a /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				c220e00686ed4c1da347591d /* wifi_speed_check.py in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4cfcc382c4c74791a6ba0872 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5c10a375c0b948fab5b310e9 /* NetworkBandwidthCheckApp.swift in Sources */,
+				a183b0eaef514ff794059b55 /* ContentView.swift in Sources */,
+				92ea1600b80345eaac030990 /* SpeedTestRunner.swift in Sources */,
+				65aac7da87804cbb8dfb6bb5 /* SpeedTestViewModel.swift in Sources */,
+				01d5c5e6700b433ba5179d7f /* SpeedTestResult.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70444ad4d05242e38db31880 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74cb6f18700340098d643e9e /* BandwidthWidget.swift in Sources */,
+				2464d245576d4cefb9cb3d23 /* SpeedTestResult.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		12621ee6a41d444ca8a64d11 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 075ecf499dcd4c39b2447360 /* NetworkBandwidthCheckWidget */;
+			targetProxy = 7e71523317fe4d16b6449dcd /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		12621ee6a41d444ca8a64d20 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		12621ee6a41d444ca8a64d21 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		12621ee6a41d444ca8a64d22 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = NetworkBandwidthCheck/NetworkBandwidthCheck.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = NetworkBandwidthCheck/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.networkbandwidthcheck.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		12621ee6a41d444ca8a64d23 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = NetworkBandwidthCheck/NetworkBandwidthCheck.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = NetworkBandwidthCheck/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.networkbandwidthcheck.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		12621ee6a41d444ca8a64d24 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = NetworkBandwidthCheckWidget/NetworkBandwidthCheckWidget.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = NetworkBandwidthCheckWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.networkbandwidthcheck.app.widget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		12621ee6a41d444ca8a64d25 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = NetworkBandwidthCheckWidget/NetworkBandwidthCheckWidget.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = NetworkBandwidthCheckWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.networkbandwidthcheck.app.widget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		12621ee6a41d444ca8a64d10 /* Build configuration list for PBXNativeTarget "NetworkBandwidthCheck" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				12621ee6a41d444ca8a64d22 /* Debug */,
+				12621ee6a41d444ca8a64d23 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		12621ee6a41d444ca8a64d12 /* Build configuration list for PBXNativeTarget "NetworkBandwidthCheckWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				12621ee6a41d444ca8a64d24 /* Debug */,
+				12621ee6a41d444ca8a64d25 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		12621ee6a41d444ca8a64d13 /* Build configuration list for PBXProject "NetworkBandwidthCheck" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				12621ee6a41d444ca8a64d20 /* Debug */,
+				12621ee6a41d444ca8a64d21 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 12621ee6a41d444ca8a64d00 /* Project object */;
+}

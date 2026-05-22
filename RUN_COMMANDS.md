@@ -2,6 +2,19 @@
 
 Instructions for setting up and running the network bandwidth (WiFi/internet) speed check.
 
+## macOS desktop app & widget
+
+See **[macos/README.md](macos/README.md)** for building the native app (menu bar + desktop widget).
+
+Quick start:
+
+```bash
+pip install -r requirements.txt
+open macos/NetworkBandwidthCheck.xcodeproj
+```
+
+In Xcode: set your Signing Team, press **Run** (⌘R), then add the **Bandwidth** widget from the desktop widget gallery.
+
 ## Prerequisites
 
 - Python 3.8 or newer
