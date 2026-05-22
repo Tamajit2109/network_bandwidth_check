@@ -14,7 +14,7 @@ def bits_to_mbps(bits_per_second: float) -> float:
 
 
 def run_speedtest(secure: bool = True) -> dict:
-    print("Running speed test...")
+    print("Running speed test....")
     try:
         import speedtest
     except ImportError as exc:
