@@ -20,13 +20,15 @@ pip install -r ../requirements.txt
 2. Select your **Signing Team** for both targets (app + widget) under Signing & Capabilities.
 3. Press **Run** (⌘R).
 
-### Option B — Command line
+### Option B — Command line (no Xcode)
 
 ```bash
-chmod +x macos/scripts/build.sh
-./macos/scripts/build.sh
-open build/DerivedData/Build/Products/Release/NetworkBandwidthCheck.app
+chmod +x macos/scripts/package_app.sh
+./macos/scripts/package_app.sh
+open build/NetworkBandwidthCheck.app
 ```
+
+This builds the app with a blue **speedometer** icon (Dock, Finder, and app switcher).
 
 ## Using the app
 

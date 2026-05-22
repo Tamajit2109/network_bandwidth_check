@@ -1,4 +1,5 @@
-build/
+build/AppIcon.iconset/
+build/AppIcon.icns
 DerivedData/
 *.xcuserstate
 xcuserdata/
